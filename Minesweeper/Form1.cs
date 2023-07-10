@@ -232,7 +232,7 @@ namespace Minesweeper
             int x = e.X / (ButtttonSize + Grid);
             int y = e.Y / (ButtttonSize + Grid);
             if (x >= n || y >= m)
-                goto EndOfFunction;
+                return;
 
             if (FirstStep == true)
             {
@@ -284,8 +284,6 @@ namespace Minesweeper
                 MessageBox.Show("You WIN!!! =)*");
                 this.Close();
             }
-
-        EndOfFunction: ;
         }
     }
 }
